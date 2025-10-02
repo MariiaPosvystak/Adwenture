@@ -1,4 +1,0 @@
-git config --global user.name "Mariia Posvystak"
-git config --global user.email "mariiaposvystak@gmail.com"
-git init
-git config --global --list
