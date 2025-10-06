@@ -6,3 +6,6 @@ Ajutised tabelid
 
 Views
 <img width="318" height="213" alt="{AAB5A1D9-02B1-41EB-BEEE-A30DDBB53924}" src="https://github.com/user-attachments/assets/1f654419-c5ce-4739-9482-2c84a530bc4b" />
+
+Procedure
+<img width="284" height="86" alt="{2C80AF86-1C5F-4217-AF59-3D39319F2B76}" src="https://github.com/user-attachments/assets/04c8770c-df6c-4bb7-8e32-ea605f16866a" />
