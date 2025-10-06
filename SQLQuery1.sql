@@ -29,11 +29,11 @@ Update fn_ILTVF_GetEmployees() set FirstName='Sam' where EmployeeKey=1;
 
 
 --33
---Funktsioonid uuendamine 
+--Funktsioon tagastab töötaja nime tema ID alusel.
 Create Function fn_GetEmloyeeNameByld(@id int)
 Returns nvarchar(20)
 as
 begin
 return (select FirstName from dbo.DimEmployee where EmployeeKey=@id)
 end;
---käivita funtsioonid
+
