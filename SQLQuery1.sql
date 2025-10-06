@@ -92,6 +92,11 @@ Update dbo.DimEmployee set Salary=4500 where EmployeeKey=3;
 Update dbo.DimEmployee set Salary=5500 where EmployeeKey=4;
 Update dbo.DimEmployee set Salary=3100 where EmployeeKey=5;
 
-Select * from dbo.DimEmployee where Salary > 5000 and Salary < 7000
+Select * from dbo.DimEmployee where Salary > 5000 and Salary < 7000;
+
+--Lisamine indeksi
+Create index IX_DimEmployee_Salary
+on dbo.DimEmployee (Salary ASC);
+
 
 
