@@ -51,3 +51,23 @@ group By SalesTerritoryRegion
 --käivitama view
 select * from vWEmployeesCountBySalesTerritory
 
+--lisa view, mis näed EmployeeKey, firstname, 
+--gender, SalesTerritoryKey 
+create view vWEmployeesDataExceptSalary
+as
+Select EmployeeKey, FirstName, 
+Gender,SalesTerritoryKey
+from DimEmployee
+--käivitama view
+select * from vWEmployeesDataExceptSalary
+
+--Uuenda, kustutama view
+--Uuenda view
+Update vWEmployeesDataExceptSalary
+set FirstName='Mikey' where EmployeeKey=3;
+
+--Kustutama(lisa(insert)) view
+Delete from vWEmployeesDataExceptSalary
+where EmployeeKey=4;
+Insert into vWEmployeesDataExceptSalary
+values('Miki','M',4)
