@@ -100,3 +100,7 @@ on dbo.DimEmployee (Salary ASC);
 
 --§36 Klastreeritud ja mitte-klastreeritud indeksid
 
+Create Clustered index IX_DimEmployee_FirstName
+on dbo.DimEmployee (FirstName);
+
+drop index DimEmployee.PK_DimEmployee_EmployeeKey
