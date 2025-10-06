@@ -103,4 +103,4 @@ on dbo.DimEmployee (Salary ASC);
 Create Clustered index IX_DimEmployee_FirstName
 on dbo.DimEmployee (FirstName);
 
-drop index DimEmployee.PK_DimEmployee_EmployeeKey
+--§37 Unikaalne ja mitte-unikaalne indeks
