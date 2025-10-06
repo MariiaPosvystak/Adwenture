@@ -45,3 +45,13 @@ as
 begin
 return (select FirstName from dbo.DimEmployee where EmployeeKey=@id)
 end;
+--Teine funktsiooni uuendsmine
+Alter Function fn_GetEmloyeeNameByld(@id int)
+Returns nvarchar(20)
+with SchemaBinding
+as
+begin
+return (select FirstName from dbo.DimEmployee where EmployeeKey=@id)
+end;
+
+
