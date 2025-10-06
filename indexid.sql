@@ -23,3 +23,11 @@ on dbo.DimEmployee (FirstName);
 Execute sp_helpindex DimEmployee
 
 Drop index DimEmployee.PK_DimEmployee_EmployeeKey
+
+Create Unique NonClustered Index UIX_DimEmployee_FirstName
+On DimEmployee(FirstName)
+
+ALTER TABLE DimEmployee 
+ADD CONSTRAINT UQ_DimEmployee_DepartmentName
+UNIQUE NONCLUSTERED (DepartmentName)
+
