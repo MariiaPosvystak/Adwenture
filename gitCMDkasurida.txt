@@ -1,4 +1,41 @@
-git config --global user.name "Mariia Posvystak"
-git config --global user.email "mariiaposvystak@gmail.com"
+git config user.name "Mariia Posvystak"
+git config user.email "mariiaposvystak@gmail.com"
 git init
 git config --global --list
+git remote add origin https://github.com/Mariia Posvystak/Adwenture.git
+git branch -M main
+git push -u origin main
+
+>git add .
+git commit -a -m "git käsude fail on loodub"
+(git remote remove origin) --отменение соединения с репозиторием
+
+
+
+PowerShell
+ ssh-keygen -o -t rsa -C "mariiaposvystak@gmail.com" -- создание ключа
+------------------------------------------------------------------------------------------
+git checkout Mariia
+git status
+git add .
+git commit -a -m "create table kn kirjeldatud"
+
+
+>cd desktop
+>c:
+git config --g
+
+>cd desktop
+>cd ..
+>c:
+>git config --global user.name "Mariia Posvystak" -- git süsteemis salvestatakse sinu nimi
+>git config --global user.email "mariiaposvystak@gmail.com"
+>git config --global --list -- näitab mis GIT salvestas
+>git status
+>git branch
+>git checkout Mariia
+>git add .
+>git commit -a -m "Nimi on lisatud"
+
+-----------------------------------------
+
