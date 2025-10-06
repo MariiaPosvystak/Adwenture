@@ -82,5 +82,7 @@ end;
 --lisa globaalset ajutist tabelit
 Create table ##EmployeeDetails(Id int, Name nvarchar(20));
 
+--§35 Ineksid serveris
+
 
 
