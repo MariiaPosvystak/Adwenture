@@ -98,5 +98,5 @@ Select * from dbo.DimEmployee where Salary > 5000 and Salary < 7000;
 Create index IX_DimEmployee_Salary
 on dbo.DimEmployee (Salary ASC);
 
-
+--§36 Klastreeritud ja mitte-klastreeritud indeksid
 
