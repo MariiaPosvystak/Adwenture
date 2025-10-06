@@ -83,6 +83,15 @@ end;
 Create table ##EmployeeDetails(Id int, Name nvarchar(20));
 
 --§35 Ineksid serveris
+--Salary veeru lisamine DimEmployee tabelisse
+ALTER TABLE dbo.DimEmployee
+ADD Salary MONEY;
+Update dbo.DimEmployee set Salary=2500 where EmployeeKey=1;
+Update dbo.DimEmployee set Salary=6500 where EmployeeKey=2;
+Update dbo.DimEmployee set Salary=4500 where EmployeeKey=3;
+Update dbo.DimEmployee set Salary=5500 where EmployeeKey=4;
+Update dbo.DimEmployee set Salary=3100 where EmployeeKey=5;
 
+Select * from dbo.DimEmployee where Salary > 5000 and Salary < 7000
 
 
