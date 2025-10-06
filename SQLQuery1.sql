@@ -79,4 +79,8 @@ insert into #PersonDetails values(3, 'Todd');
 select * from #PersonDetails
 end;
 
+--lisa globaalset ajutist tabelit
+Create table ##EmployeeDetails(Id int, Name nvarchar(20));
+
+
 
