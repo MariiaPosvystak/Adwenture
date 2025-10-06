@@ -33,6 +33,22 @@ UNIQUE NONCLUSTERED (DepartmentName)
 
 EXECUTE SP_HELPCONSTRAINT 
 
-CREATE UNIQUE INDEX IX_tblEmployee_City
-ON tblEmployee(City)
+CREATE UNIQUE INDEX IX_DimEmployee_DepartmentName
+ON DimEmployee(DepartmentName)
 WITH IGNORE_DUP_KEY
+
+create NonClustered index IX_DimEmployee_Salary
+on DimEmployee(Salary asc)
+
+--Uuendamine ja select tabel DimEmployee
+delete from DimEmployee where Salary =2500
+
+update DimEmployee set Salary = 9000 where Salary =7500
+
+Select * from DimEmployee order by Salary 
+
+Select * from DimEmployee order by Salary desc
+
+Select Salary, Count(Salary) as total
+from DimEmployee
+group by Salary
