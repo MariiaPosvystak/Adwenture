@@ -37,3 +37,11 @@ begin
 return (select FirstName from dbo.DimEmployee where EmployeeKey=@id)
 end;
 
+--Funktsiooni uuendsmine
+Alter Function fn_GetEmloyeeNameByld(@id int)
+Returns nvarchar(20)
+with encryption
+as
+begin
+return (select FirstName from dbo.DimEmployee where EmployeeKey=@id)
+end;
