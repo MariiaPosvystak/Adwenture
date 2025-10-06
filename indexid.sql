@@ -31,3 +31,8 @@ ALTER TABLE DimEmployee
 ADD CONSTRAINT UQ_DimEmployee_DepartmentName
 UNIQUE NONCLUSTERED (DepartmentName)
 
+EXECUTE SP_HELPCONSTRAINT 
+
+CREATE UNIQUE INDEX IX_tblEmployee_City
+ON tblEmployee(City)
+WITH IGNORE_DUP_KEY
