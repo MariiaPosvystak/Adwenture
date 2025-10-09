@@ -6,6 +6,9 @@ Ajutised tabelid
 
 <img width="250" height="241" alt="{C954599F-02DE-4E46-8106-96F87B3EC96A}" src="https://github.com/user-attachments/assets/596ee419-fc45-4d34-a7a6-92c52c0e5c98" />
 
+<img width="330" height="135" alt="{D8873558-523F-4C94-B478-77F3368CB2A0}" src="https://github.com/user-attachments/assets/ad81fb35-9139-4c5f-8c83-209ab7aa2725" />
+
+
 Views
 
 <img width="318" height="213" alt="{AAB5A1D9-02B1-41EB-BEEE-A30DDBB53924}" src="https://github.com/user-attachments/assets/1f654419-c5ce-4739-9482-2c84a530bc4b" />
