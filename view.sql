@@ -88,4 +88,43 @@ Update vWEmployeesDetailsBySalesTerritory
 set SalesTerritoryRegion ='EU' where FirstName='Robert' --Змінюються всі з таким же значенням Region яке було в Robert
 
 
+--OPERAATOR
+select * from DimEmployee;
+select * from DimCustomer
+
+select FirstName, LastName, Gender
+from DimEmployee
+except
+select FirstName, LastName, Gender
+from DimCustomer
+-- + Salary
+select FirstName, LastName, Gender, Salary
+from DimEmployee
+where Salary >= 5000
+except
+select FirstName, LastName, Gender, Salary
+from DimCustomer
+where Salary >= 3000
+order by FirstName
+
+
+select EmployeeKey, FirstName, LastName, Gender
+from DimEmployee
+where EmployeeKey not in (select CustomerKey from DimCustomer)
+
+
+select EmployeeKey, FirstName, Gender
+from DimEmployee
+except
+select CustomerKey, FirstName, Gender
+from DimCustomer
+
+--vige
+select EmployeeKey, FirstName, Gender
+from DimEmployee
+except
+select CustomerKey, FirstName
+from DimCustomer
+
+
 
