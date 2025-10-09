@@ -71,3 +71,39 @@ disable trigger tr_ServerScopeTrigger on all server
 enable trigger tr_ServerScopeTrigger on all server
 --Kuidas kustutada serveri ulatuses olevat DDL trigerit
 drop trigger tr_ServerScopeTrigger on all server
+
+
+--Where ja Having erinevused 
+select * from FactinternetSales
+
+--Selected
+select OrderDateKey, Sum(UnitPrice) as TotalSales
+from FactinternetSales
+group by OrderDateKey
+
+
+select OrderDateKey, Sum(UnitPrice) as TotalSales
+from FactinternetSales
+group by OrderDateKey
+having Sum(UnitPrice) > 80000
+
+
+select OrderDateKey, Sum(UnitPrice) as TotalSales
+from FactinternetSales
+group by OrderDateKey
+where Sum(UnitPrice) > 80000 
+
+
+select OrderDateKey, Sum(UnitPrice) as TotalSales
+from FactinternetSales
+where OrderDateKey in (20101229, 20101231)
+group by OrderDateKey
+
+
+select OrderDateKey, Sum(UnitPrice) as TotalSales
+from FactinternetSales
+group by OrderDateKey
+having OrderDateKey in (20101229, 20101231)
+
+--Kiiruse seisukohast on HAVING aeglasem, kui WHERE ja peaks võimalusel vältima.
+--Teine võimalus oleks, et WHERE tuleb enne GROUP BY ja HAVING peale GROUP BY-d.
