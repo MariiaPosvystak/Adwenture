@@ -45,3 +45,29 @@ begin
 print 'You just renamed something'
 end
 
+--Server-Scoped DDL triggerid
+Create trigger tr_DatabaseScopeTrigger
+on database
+for create_table, alter_table, drop_table
+as
+begin
+rollback
+print 'You cannot create, alter or drop atable in the current database'
+end
+
+-- for all server
+Create trigger tr_ServerScopeTrigger
+on all server
+for create_table, alter_table, drop_table
+as
+begin
+rollback
+print 'You cannot create, alter or drop atable in any database on the server'
+end
+
+--Kuidas saab Serveri ulatuses olevat DDL trigerit kinni panna:
+disable trigger tr_ServerScopeTrigger on all server
+--Kuidas lubada Serveri ulatuses olevat DDL trigerit:
+enable trigger tr_ServerScopeTrigger on all server
+--Kuidas kustutada serveri ulatuses olevat DDL trigerit
+drop trigger tr_ServerScopeTrigger on all server
