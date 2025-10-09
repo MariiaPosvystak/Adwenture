@@ -21,3 +21,6 @@ Triggerid
 
 <img width="314" height="198" alt="{06F413FB-A5E4-406D-961F-E21496AC1798}" src="https://github.com/user-attachments/assets/a1c72d39-5839-4560-8a8e-01b3ee4cbeba" />
 
+<img width="301" height="128" alt="{DD8429BA-87EB-408B-8E5E-8994BCAF0D2B}" src="https://github.com/user-attachments/assets/91bf8b65-ea61-43bb-9fa4-00298b0e94c5" />
+
+
